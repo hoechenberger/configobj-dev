@@ -44,12 +44,14 @@ REQUIRES = """
     six
 """
 
-VERSION = ''
-with closing(open(os.path.join(__here__, 'src', PACKAGES[0], '_version.py'), 'r')) as handle:
-    for line in handle.readlines():
-        if line.startswith('__version__'):
-            VERSION = re.split('''['"]''', line)[1]
-assert re.match(r"[0-9](\.[0-9]+)", VERSION), "No semantic version found in 'configobj._version'"
+# VERSION = ''
+# with closing(open(os.path.join(__here__, 'src', PACKAGES[0], '_version.py'), 'r')) as handle:
+#     for line in handle.readlines():
+#         if line.startswith('__version__'):
+#             VERSION = re.split('''['"]''', line)[1]
+# assert re.match(r"[0-9](\.[0-9]+)", VERSION), "No semantic version found in 'configobj._version'"
+
+VERSION = '2019.9.1'
 
 LONG_DESCRIPTION = """**ConfigObj** is a simple but powerful config file reader and writer: an *ini
 file round tripper*. Its main feature is that it is very easy to use, with a
