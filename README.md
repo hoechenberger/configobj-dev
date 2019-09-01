@@ -12,7 +12,7 @@ Snapshots of the development versions (`master` branch) of
 pip install configobj-dev
 ```
 
-### via `conda` from `conda-forge
+### via `conda` from `conda-forge`
 ```
 conda install -c conda-forge configobj-dev
 ```
